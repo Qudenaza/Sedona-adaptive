@@ -13,13 +13,13 @@
 	<header class="page-header">
 		<nav class="user-nav user-nav--closed user-nav--nojs">
 			<button class="user-nav__toogle" type="button">
-					<span class="visually-hidden">Меню</span>
+				<span class="visually-hidden">Меню</span>
 			</button>
 			<ul class="user-nav__list">
-					<li><a href="#" class="user-nav__item">Главная</a></li>
-					<li><a href="#" class="user-nav__item">Фото и видео</a></li>
-					<li><a href="#" class="user-nav__item">Форма отзыва</a></li>
-					<li><a href="#" class="user-nav__item">HTML Academy</a></li>
+				<li><a href="#" class="user-nav__item">Главная</a></li>
+				<li><a href="#" class="user-nav__item">Фото и видео</a></li>
+				<li><a href="#" class="user-nav__item">Форма отзыва</a></li>
+				<li><a href="#" class="user-nav__item">HTML Academy</a></li>
 			</ul>
 			<a href="#" class="user-nav__logo">
 				<picture>
@@ -36,6 +36,80 @@
 			</picture>
 		</div>
 	</header>
+	<main class="main-content">
+		<section class="site-intro">
+			<h2 class="visually-hidden">Вводный текст сайта</h2>
+			<b class="site-intro__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+			<p class="site-intro__descr">Рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
+		</section>
+		<section class="reason reason--one">
+			<div class="reason__wrapper">
+				<h2 class="reason__title">Настоящий городок</h2>
+				<span class="reason__number">№1</span>
+				<p class="reason__descr">Седона не атракцион для туристов, там течет своя жизнь</p>
+			</div>
+			<div class="reason__img">
+				<picture>
+						<source media="(min-width: 1200px)" srcset="img/photo-city@1x.jpg">
+						<source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg">
+						<img src="../img/photo-city-mobile@1x.jpg" alt="Городок Седона">
+				</picture>
+			</div>	
+		</section>
+		<section class="advantages">
+			<h2 class="visually-hidden">Преимущетсва</h2>
+			<section class="advantages__home">
+				<h2 class="advantages__title">Жилье</h2>
+				<p class="advantages__descr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+			</section>
+			<section class="advantages__souvenirs">
+				<h2 class="advantages__title">Сувениры</h2>
+				<p class="advantages__descr">Не только китайского, но и местного производства!</p>
+			</section>
+			<section class="advantages__food">
+				<h2 class="advantages__title">Еда</h2>
+				<p class="advantages__descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+			</section>
+		</section>
+		<section class="reason">
+			<div class="reason__wrapper reason__wrapper--two">
+				<h2 class="reason__title">Там есть мост дьявола</h2>
+				<span class="reason__number">№2</span>
+				<p class="reason__descr">Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
+			</div>
+			<div class="reason__img reason__img--two">
+				<picture>
+						<source media="(min-width: 1200px)" srcset="img/photo-bridge@1x.jpg">
+						<source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+						<img src="../img/photo-bridge-mobile@1x.jpg" alt="Городок Седона">
+				</picture>
+			</div>	
+		</section>
+		<section class="reasons">
+			<h2 class="visually-hidden">Еще причины</h2>
+			<section class="reasons__wrapper">
+				<h2 class="reason__title">Небольшая площадь</h2>
+				<span class="reason__number">№3</span>
+				<p class="reason__descr">Все достопримечательности находятся очень близко</p>
+			</section>
+			<section class="reasons__wrapper">
+					<h2 class="reason__title">Красивая дорога</h2>
+					<span class="reason__number">№4</span>
+					<p class="reason__descr">Ехать в седону совсем не скучно</p>
+			</section>
+			<section class="reasons__wrapper">
+					<h2 class="reason__title">Мало туристов</h2>
+					<span class="reason__number">№5</span>
+					<p class="reason__descr">Большинство едет в гранд каньон и толпится там</p>
+					</section>
+		</section>
+		<section class="hotels">
+			<h2 class="hotels__title">Заинтересовались?</h2>
+			<p class="hotels__descr">Укажите предпологаемые даты поездки и мы покажем вам лучшие прдложения гостиниц в седоне</p>
+			<button class="hotels__btn" type="button">Найти гостиницу</button>
+			<div class="hotels__map"></div>
+		</section>
+	</main>
 	<script src="js/scripts.js"></script>
 	<script src="js/picturefill.js"></script>
 </body>
