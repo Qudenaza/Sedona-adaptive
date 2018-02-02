@@ -1,0 +1,60 @@
+.hotel {
+    text-align: center;
+    padding: 40px;
+    &__title {
+        font-size: 21px;
+        line-height: 25px;
+    }
+    &__descr {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #333333;
+    }
+    &__btn {
+        width: 100%;
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 58px;
+        border: none;
+        text-transform: uppercase;
+        color: #ffffff;
+        background: #81b3d2;
+        cursor: pointer;
+        &:hover {
+            background: #669ec0;
+        }
+        &:active {
+            opacity: .7;
+        }
+    }
+    &__map {
+        margin: 0 auto;
+        height: 350px;
+        background: url('../img/bg-map-mobile@1x.jpg') no-repeat;
+    }
+}
+
+@media (min-width: 768px) {
+    .hotel {
+        &__title {
+            font-size: 30px;
+        }
+        &__map {
+            background: url('../img/bg-map-tablet@1x.jpg') no-repeat;
+        }
+        &__btn {
+            width: 40%;
+        }
+    }
+}
+
+@media (min-width: 1150px) {
+    .hotel {
+        width: 1200px;
+        margin: 0 auto;
+        &__map {
+            background: url('../img/bg-map-desktop@1x.jpg') no-repeat;
+        }
+    }
+}

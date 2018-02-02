@@ -1,33 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>«Седона»</title>
+	<title>Добро пожаловать на сайт городка «Седона»</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="page-header">
 		<nav class="user-nav user-nav--closed user-nav--nojs">
-			<button class="user-nav__toogle" type="button">
+			<button class="user-nav__toggle" type="button">
 				<span class="visually-hidden">Меню</span>
 			</button>
 			<ul class="user-nav__list">
-				<li><a href="#" class="user-nav__item">Главная</a></li>
-				<li><a href="#" class="user-nav__item">Фото и видео</a></li>
-				<li><a href="#" class="user-nav__item">Форма отзыва</a></li>
-				<li><a href="#" class="user-nav__item">HTML Academy</a></li>
+				<li><a href="index.html" class="user-nav__item">Главная</a></li>
+				<li><a href="photo.html" class="user-nav__item">Фото и видео</a></li>
+				<li><a href="feedback.html" class="user-nav__item visually-hidden">Заглушка</a></li>
+				<li><a href="#" class="user-nav__item">Отзывы</a></li>
+				<li><a href="#" class="user-nav__item">html academy</a></li>
 			</ul>
-			<a href="#" class="user-nav__logo">
+			<a href="index.html" class="user-nav__logo">
 				<picture>
 					<source media="(min-width: 1150px)" srcset="img/logo-sedona-desktop.svg">
 					<source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-					<img src="img/logo-sedona-mobile.svg" alt="Логотип сайта">
+					<img src="img/logo-sedona-mobile.svg" alt="Логотип сайта" >
 				</picture>
-			</a>	
+			</a>
 		</nav>
 		<div class="page-header__intro">
 			<picture>
@@ -37,93 +38,91 @@
 		</div>
 	</header>
 	<main class="main-content">
-		<section class="site-intro">
-			<h2 class="visually-hidden">Вводный текст сайта</h2>
-			<b class="site-intro__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
-			<p class="site-intro__descr">Рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
+		<section class="intro">
+			<h1 class="intro__title">Седона — небольшой городок в Аризоне, заслуживающий большего!
+			</h1>
+			<p class="intro__descr">Рассмотрим 5 причин по которым седона круче чем гранд каньон!</p>
 		</section>
-		<section class="reason reason--one">
-			<div class="reason__wrapper">
-				<h2 class="reason__title">Настоящий городок</h2>
-				<span class="reason__number">№1</span>
-				<p class="reason__descr">Седона не атракцион для туристов, там течет своя жизнь</p>
+		<section class="city">
+			<div class="city__left-column">
+				<h2 class="city__title">Настоящий городок</h2>
+				<span class="city__number">№1</span>
+				<p class="city__descr">Седона не атракцион для туристов, там течет своя жизнь</p>
 			</div>
-			<div class="reason__img">
+			<div class="city__right-column">
 				<picture>
-						<source media="(min-width: 1200px)" srcset="img/photo-city@1x.jpg">
-						<source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg">
-						<img src="../img/photo-city-mobile@1x.jpg" alt="Городок Седона">
+					<source media="(min-width: 1150px)" srcset="img/photo-city@1x.jpg">
+					<source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg">
+					<img src="img/photo-city-mobile@1x.jpg" alt="Настоящий городок">
 				</picture>
-			</div>	
-		</section>
-		<section class="advantages">
-			<h2 class="visually-hidden">Преимущетсва</h2>
-			<section class="advantages__home">
-				<h2 class="advantages__title">Жилье</h2>
-				<p class="advantages__descr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-			</section>
-			<section class="advantages__souvenirs">
-				<h2 class="advantages__title">Сувениры</h2>
-				<p class="advantages__descr">Не только китайского, но и местного производства!</p>
-			</section>
-			<section class="advantages__food">
-				<h2 class="advantages__title">Еда</h2>
-				<p class="advantages__descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-			</section>
-		</section>
-		<section class="reason">
-			<div class="reason__wrapper reason__wrapper--two">
-				<h2 class="reason__title">Там есть мост дьявола</h2>
-				<span class="reason__number">№2</span>
-				<p class="reason__descr">Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
 			</div>
-			<div class="reason__img reason__img--two">
-				<picture>
-						<source media="(min-width: 1200px)" srcset="img/photo-bridge@1x.jpg">
-						<source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
-						<img src="../img/photo-bridge-mobile@1x.jpg" alt="Городок Седона">
-				</picture>
-			</div>	
 		</section>
 		<section class="reasons">
-			<h2 class="visually-hidden">Еще причины</h2>
-			<section class="reasons__wrapper">
-				<h2 class="reason__title">Небольшая площадь</h2>
-				<span class="reason__number">№3</span>
-				<p class="reason__descr">Все достопримечательности находятся очень близко</p>
-			</section>
-			<section class="reasons__wrapper">
-					<h2 class="reason__title">Красивая дорога</h2>
-					<span class="reason__number">№4</span>
-					<p class="reason__descr">Ехать в седону совсем не скучно</p>
-			</section>
-			<section class="reasons__wrapper">
-					<h2 class="reason__title">Мало туристов</h2>
-					<span class="reason__number">№5</span>
-					<p class="reason__descr">Большинство едет в гранд каньон и толпится там</p>
-					</section>
-		</section>
-		<section class="hotels">
-			<h2 class="hotels__title">Заинтересовались?</h2>
-			<p class="hotels__descr">Укажите предпологаемые даты поездки и мы покажем вам лучшие прдложения гостиниц в седоне</p>
-			<button class="hotels__btn" type="button">Найти гостиницу</button>
-			<div class="hotels__map">
-				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1fa08d8608820992212ee2a60d7bb69aad9c139c878b166619f7e0c9417ed5f4&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+			<div class="reasons__wrapper">
+				<h2 class="reasons__title">Жилье</h2>
+				<p class="reasons__descr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+			</div>
+			<div class="reasons__wrapper">
+				<h2 class="reasons__title">Еда</h2>
+				<p class="reasons__descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
+			</div>
+			<div class="reasons__wrapper">
+				<h2 class="reasons__title">Сувениры</h2>
+				<p class="reasons__descr">Не только китайского, но и местного производства!</p>
 			</div>
 		</section>
-		<footer class="page-footer">
-			<b class="page-footer__hashtag">#Visitsedona</b>
-			<ul class="page-footer__socials">
-				<li><a href="#" class="page-footer__social social__tw"></a></li>
-				<li><a href="#" class="page-footer__social social__fb"></a></li>
-				<li><a href="#" class="page-footer__social social__yt"></a></li>
-			</ul>
-			<b class="page-footer__authors">Разработано
-				<a href="#"></a>
-			</b>
-		</footer>
+		<section class="city city--bridge">
+			<div class="city__left-column city__left-column--bridge">
+				<h2 class="city__title city__title--bridge">Там есть мост дьявола</h2>
+				<span class="city__number">№2</span>
+				<p class="city__descr">Да, по нему можной пройти! если конечно вы осмелитесь</p>
+			</div>
+			<div class="city__right-column city__right-column--bridge">
+				<picture>
+					<source media="(min-width: 1150px)" srcset="img/photo-bridge@1x.jpg">
+					<source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+					<img src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола">
+				</picture>
+			</div>
+		</section>
+		<section class="reasons reasons--two">
+			<div class="reasons__wrapper reasons__wrapper--two">
+				<h2 class="reasons__title">Небольшая площадь</h2>
+				<span class="reasons__number">№3</span>
+				<p class="reasons__descr">Все достопримечательности находятся очень близко</p>
+			</div>
+			<div class="reasons__wrapper reasons__wrapper--two">
+				<h2 class="reasons__title">Красивая дорога</h2>
+				<span class="reasons__number">№4</span>
+				<p class="reasons__descr">Ехать в седону из лас-вегаса совсем не скучно!</p>
+			</div>
+			<div class="reasons__wrapper reasons__wrapper--two">
+				<h2 class="reasons__title">Мало туристов</h2>
+				<span class="reasons__number">№5</span>
+				<p class="reasons__descr">Большинство едет в гранд каньон и толпится там</p>
+			</div>
+			</section>
+			<section class="hotel">
+				<h2 class="hotel__title">Заинтересовались?</h2>
+				<p class="hotel__descr">Укажите предпологаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
+				<button class="hotel__btn" type="button">Найти гостиницу</button>
+				<div class="hotel__map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1fa08d8608820992212ee2a60d7bb69aad9c139c878b166619f7e0c9417ed5f4&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe></div>
+			</section>
 	</main>
-	<script src="js/scripts.js"></script>
+	<footer class="page-footer">
+		<span class="page-footer__hashtag">#visitsedona</span>
+		<section class="page-footer__socials">
+			<h2 class="visually-hidden">Мы в социальных сетях</h2>
+			<a href="#" class="page-footer__social social__tw"></a>
+			<a href="#" class="page-footer__social social__fb"></a>
+			<a href="#" class="page-footer__social social__yt"></a>
+		</section>
+		<div class="page-footer__authors">
+			<span class="page-footer__text">Разработано</span>
+			<a href="#" class="page-footer__img"></a>
+		</div>
+	</footer>
 	<script src="js/picturefill.js"></script>
+	<script src="js/scripts.js"></script>
 </body>
 </html>

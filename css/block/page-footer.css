@@ -1,0 +1,78 @@
+.page-footer {
+  padding: 60px 0;
+  text-align: center; }
+  .page-footer__hashtag {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 25px; }
+  .page-footer__socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 30px 0;
+    height: 48px; }
+  .page-footer__social {
+    display: block;
+    width: 48px;
+    margin: 0 5px; }
+    .page-footer__social:hover {
+      opacity: .7; }
+    .page-footer__social:active {
+      opacity: .9; }
+  .page-footer__authors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .page-footer__text {
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+    line-height: 48px; }
+  .page-footer__img {
+    display: block;
+    width: 27px;
+    height: 34px;
+    background: url("../img/logo-htmlacademy.svg") no-repeat; }
+    .page-footer__img:hover {
+      background: url("../img/logo-htmlacademy-hover.svg") no-repeat; }
+    .page-footer__img:active {
+      background: url("../img/logo-htmlacademy-active.svg") no-repeat; }
+
+.social__tw {
+  background: url("../img/icon-twitter.svg"), #81b3d2;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.social__fb {
+  background: url("../img/icon-facebook.svg"), #81b3d2;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.social__yt {
+  background: url("../img/icon-youtube.svg"), #81b3d2;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+@media (min-width: 768px) {
+  .page-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 40px; }
+    .page-footer__socials {
+      margin: 0; } }

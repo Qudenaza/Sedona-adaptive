@@ -1,0 +1,84 @@
+.page-footer {
+    padding: 60px 0;
+    text-align: center;
+    &__hashtag {
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 25px;
+    }
+    &__socials {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+        height: 48px;
+    }
+    &__social {
+        display: block;
+        width: 48px;
+        margin: 0 5px;
+        &:hover {
+            opacity: .7;
+        }
+        &:active {
+            opacity: .9;
+        }
+    }
+    &__authors {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__text {
+        margin-right: 10px;
+        font-size: 14px;
+        font-weight: normal;
+        color: #333333;
+        line-height: 48px;
+    }
+    &__img {
+        display: block;
+        width: 27px;
+        height: 34px;
+        background: url('../img/logo-htmlacademy.svg') no-repeat;
+        &:hover {
+            background: url('../img/logo-htmlacademy-hover.svg') no-repeat;
+        }
+        &:active {
+            background: url('../img/logo-htmlacademy-active.svg') no-repeat;
+        }
+    }
+}
+
+.social {
+    &__tw {
+        background: url('../img/icon-twitter.svg'),
+        #81b3d2;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__fb {
+        background: url('../img/icon-facebook.svg'),
+        #81b3d2;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__yt {
+        background: url('../img/icon-youtube.svg'),
+        #81b3d2;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .page-footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 40px;
+        &__socials {
+            margin: 0;
+        }
+    }
+}

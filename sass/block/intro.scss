@@ -1,0 +1,31 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    &__title {
+        width: 70%;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 25px;
+    }
+    &__descr {
+        width: 70%;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #333333;
+    }
+}
+
+@media (min-width: 768px) {
+    .intro {
+        padding-top: 50px;
+        &__title {
+            font-size: 21px;
+        }
+    }
+}

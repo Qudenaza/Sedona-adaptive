@@ -1,0 +1,109 @@
+.city {
+    display: flex;
+    flex-direction: column;
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    background: url('../img/bg-triangle.svg'),
+                #81b3d2;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 768px 70px;
+    color: #ffffff;
+    &--bridge {
+        background-image: none;
+    }
+    &__left-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    &__right-column {
+        margin-top: 30px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    &__title {
+        margin-top: 100px;
+        font-size: 18px;
+        line-height: 25px;
+        &--bridge {
+            margin-top: 40px;
+        }
+    }
+    &__number {
+        position: relative;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 21px;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 5px;
+            height: 1px;
+            background: #ffffff;
+            left: -8px;
+            top: 42%;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            width: 5px;
+            height: 1px;
+            background: #ffffff;
+            right: -7px;
+            top: 42%;
+        }
+    }
+    &__descr {
+        width: 40%;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 21px;
+    }
+}
+
+@media (min-width: 768px) {
+    .city {
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: space-between;
+        background-image: none;
+        &--bridge {
+            margin-top: 0;
+        }
+        &__left-column {
+            width: 100%;
+            &--bridge {
+                order: 1;
+            }
+        }
+        &__right-column {
+            margin: 0;
+            margin-bottom: -3px;
+            padding: 0;
+            text-align: right;
+            &--bridge {
+                order: 0;
+            }
+        }
+        &__title {
+            margin-top: 70px;
+            font-size: 21px;
+        }
+        &__descr {
+            width: 80%;
+        }
+    }
+}
+
+@media (min-width: 1150px) {
+    .city {
+        width: 1200px;
+        height: 260px;
+        margin: 40px auto 0 auto;
+        overflow: hidden;
+        &--bridge {
+            margin-top: 0;
+        }
+    }
+}

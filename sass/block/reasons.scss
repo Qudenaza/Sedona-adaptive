@@ -1,0 +1,115 @@
+.reasons {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    &--two {
+        justify-content: space-between;
+        background: #ededed;
+        text-align: center;
+        & .reasons__descr {
+            margin: 20px auto 0 auto;
+            width: 70%;
+        }
+    }
+    &__number {
+        position: relative;
+        font-size: 14px;
+        font-weight: normal;
+        color: #333333;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 5px;
+            height: 1px;
+            background-color: #333333;
+            left: -8px;
+            top: 45%;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            width: 5px;
+            height: 1px;
+            background-color: #333333;
+            right: -8px;
+            top: 45%;
+        }
+    }
+    &__wrapper {
+        margin: 0 0 40px 40px;
+        padding-left: 60px;
+        &:first-child {
+            background: url('../img/icon-house.svg') no-repeat;
+        }
+        &:nth-child(2) {
+            background: url('../img/icon-burger.svg') no-repeat;
+        }
+        &:last-child {
+            background: url('../img/icon-gift.svg') no-repeat 0 -5px;
+        }
+        &--two {
+            margin: 0;
+            padding: 0;
+            &:first-child,
+            &:nth-child(2),
+            &:last-child {
+                background: none;
+            }    
+        }
+    }
+    &__title {
+        margin: 0;
+        font-size: 18px;
+        line-height: 37px;
+    }
+    &__descr {
+        margin-top: 0;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 21px;
+        color: #333333;
+    }
+}
+
+@media (min-width: 768px) {
+    .reasons {
+        flex-direction: row;
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 100px 0 0 0;
+            text-align: center;
+            &--two {
+                padding: 20px 0 0 0;
+            }
+            &:first-child {
+                background-size: 80px;
+                background-position: 50% -20px;
+            }
+            &:nth-child(2) {
+                background-size: 80px;
+                background-position: 50% -10px;
+            }
+            &:last-child {
+                background-size: 70px;
+                background-position: 50% -20px;
+            }
+        }
+        &__title {
+            font-size: 21px;
+        }
+        &__descr {
+            width: 70%;
+        }
+    }
+}
+
+@media (min-width: 1150px) {
+    .reasons {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}

@@ -2,10 +2,17 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var plumber = require('gulp-plumber');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
 
 gulp.task('sass', function() {
-    return gulp.src('./sass/**/*.scss')
+    gulp.src('./sass/**/*.scss')
+        .pipe(plumber())
         .pipe(sass().on('error', sass.logError))
+        .pipe(postcss([
+            autoprefixer()
+        ]))
         .pipe(gulp.dest('./css'));   
 });
 

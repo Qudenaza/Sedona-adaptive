@@ -1,0 +1,79 @@
+.user-nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto -20px auto; }
+  .user-nav__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #81b3d2; }
+  .user-nav__item {
+    display: block;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    border-top: 1px solid #9ac2db;
+    border-bottom: 1px solid #678fa8;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none; }
+    .user-nav__item:hover {
+      background-color: #669ec0; }
+    .user-nav__item:active {
+      background-color: #5496bd;
+      color: rgba(255, 255, 255, 0.3); }
+  .user-nav--closed .user-nav__toggle {
+    background: url("../img/icon-menu.svg") no-repeat;
+    height: 22px;
+    width: 22px; }
+  .user-nav--opened .user-nav__toggle {
+    width: 21px;
+    height: 21px;
+    background: url("../img/icon-cross.svg") no-repeat; }
+  .user-nav__toggle {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    cursor: pointer; }
+
+@media (max-width: 768px) {
+  .user-nav--closed .user-nav__list {
+    display: none; }
+  .user-nav--opened .user-nav__list {
+    display: block; }
+  .user-nav--nojs .user-nav__toggle {
+    display: none; }
+  .user-nav--nojs .user-nav__list {
+    display: block; } }
+
+@media (min-width: 769px) {
+  .user-nav {
+    margin: 0; }
+    .user-nav__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      background: transparent; }
+    .user-nav__item {
+      font-size: 14px;
+      color: #000000;
+      border: none; }
+      .user-nav__item:hover {
+        background: none;
+        color: #81b3d2; }
+      .user-nav__item:active {
+        color: rgba(0, 0, 0, 0.3); }
+    .user-nav__logo {
+      position: absolute; }
+    .user-nav__toggle {
+      display: none; } }
